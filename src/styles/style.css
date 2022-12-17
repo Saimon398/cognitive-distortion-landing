@@ -46,6 +46,13 @@ body {
   position: relative;
 }
 
+.overview {
+  position: relative;
+
+  flex-direction: column;
+  align-items: center;
+}
+
 .main-image {
   position: absolute;
   top: 50px;
@@ -78,6 +85,9 @@ body {
 .mt-185 {
   margin-top: 185px;
 }
+.mb-30 {
+  margin-bottom: 30px;
+}
 
 .g-30 {
   gap: 30px;
@@ -91,9 +101,17 @@ body {
   color: var(--white-color);
 }
 
+.ta-center {
+  text-align: center;
+}
+
 .w-1110 {
   width: 1110px;
   outline: 1px solid black;
+}
+
+.h-600 {
+  height: 600px;
 }
 
 .pt-100 {
@@ -119,4 +137,17 @@ body {
 
 .fs-34 {
   font-size: 34px;
+}
+
+.filter {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+/* section {
+  outline: 1px solid black;
+} */
+
+.video {
+  position: absolute;
+  top: 230px;
 }
