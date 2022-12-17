@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Saimon398/layout-designer-project-58#readme",
   "devDependencies": {
+    "htmlhint": "^1.1.4",
     "stylelint": "^14.16.0",
     "stylelint-config-standard": "^29.0.0"
   }
