@@ -67,10 +67,6 @@ body {
   height: 525px;
 }
 
-img {
-  outline: 1px solid black;
-}
-
 .description div {
   width: 50%;
 }
@@ -150,6 +146,10 @@ img {
   color: var(--dark-color);
 }
 
+.text-brown {
+  color: var(--brown-color);
+}
+
 .ta-center {
   text-align: center;
 }
@@ -215,9 +215,14 @@ img {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
+.bg-white {
+  background-color: var(--white-color);
+}
+
 .bg-dark {
   background-color: var(--main-dark-color);
 }
+
 .bg-light {
   background-color: var(--light-color);
 }
@@ -225,10 +230,6 @@ img {
 .bg-brown {
   background-color: var(--brown-color);
 }
-
-/* section {
-  outline: 1px solid black;
-} */
 
 .video {
   position: absolute;
