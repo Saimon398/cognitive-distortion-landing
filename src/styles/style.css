@@ -67,6 +67,10 @@ body {
   height: 525px;
 }
 
+img {
+  outline: 1px solid black;
+}
+
 .description div {
   width: 50%;
 }
@@ -97,12 +101,20 @@ body {
   display: block;
 }
 
+.mt-100 {
+  margin-top: 100px;
+}
+
 .mt-185 {
   margin-top: 185px;
 }
 
 .mb-16 {
   margin-bottom: 16px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
 
 .mb-30 {
@@ -123,6 +135,15 @@ body {
 
 .text-white {
   color: var(--white-color);
+}
+
+.text-grey {
+  color: var(--semi-dark-color);
+}
+
+.text-neucha {
+  font-family: Neucha, sans-serif;
+  line-height: 1.2;
 }
 
 .text-dark {
@@ -182,6 +203,10 @@ body {
   font-size: 34px;
 }
 
+.fs-24 {
+  font-size: 24px;
+}
+
 .fs-52 {
   font-size: 52px;
 }
@@ -195,6 +220,10 @@ body {
 }
 .bg-light {
   background-color: var(--light-color);
+}
+
+.bg-brown {
+  background-color: var(--brown-color);
 }
 
 /* section {
@@ -229,4 +258,13 @@ body {
 .card-active:hover h3 {
   transition: 0.3s;
   color: var(--white-color);
+}
+
+.top {
+  gap: 30px;
+}
+
+h4 {
+  padding: 5px 10px;
+  text-transform: uppercase;
 }
