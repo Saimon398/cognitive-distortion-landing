@@ -112,6 +112,10 @@ body {
   flex-direction: column;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .g-16 {
   gap: 16px;
 }
@@ -315,7 +319,6 @@ body {
 
 .w-1110 {
   width: 1110px;
-  /* outline: 1px solid black; */
 }
 
 .h-50 {
@@ -358,10 +361,6 @@ body {
 
 .top {
   gap: 30px;
-}
-
-.align-items-center {
-  align-items: center;
 }
 
 .footer-top form {
