@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,13 +36,12 @@
             Если мы сможем минимизировать воздействие одного или нескольких из этих факторов,
             то сможем сломать и цикл, а остатки нейтрализовать.
           </p>
-          <a class="btn mt-40 bg-orange text-white" href="#">Подробнее</a>
+          <a class="btn mt-40 bg-orange text-white" href="#navigation">Подробнее</a>
         </div>
       </div>
     </div>
   </header>
   <main class="main pt-100 pb-100">
-    <!-- Секция с видео  -->
     <section class="overview m-auto w-1110 d-flex fd-column align-items-center h-700">
       <h2 class="heading ta-center fs-60 mb-30">
         Что же это такое,
@@ -50,10 +49,9 @@
         <span class="text-orange">когнитивные искажения?</span>
       </h2>
       <p class="mb-30">Что такое когнитивные искажения. Petrovna Channel</p>
-      <iframe class="video filter" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss" frameborder="0" allowfullscreen></iframe>
+      <iframe class="video filter" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss" allowfullscreen></iframe>
     </section>
-    <!-- Секция с карточками  -->
-    <section class="navigation bg-dark">
+    <section id="navigation" class="bg-dark">
       <div class="m-auto w-1110 d-flex flex-wrap g-30 pt-200 pb-100">
         <!--Тут нужно пересмотреть что-то -->
         <a href="#" class="card d-block w-350 text-white">
@@ -103,10 +101,10 @@
         </div>
       </div>
     </section>
-    <!-- ЭФФЕКТ ИКЕИ-->
+    <!-- IKEA EFFECT -->
     <section id="ikea-effect" class="background bg-light">
       <div class="op-90 w-1110 m-auto pt-100 pb-100">
-        <div class="top d-flex">
+        <div class="top d-flex g-30">
           <img class="filter" src="./assets/images/ikea-effect.png" alt="Ikea Effect">
           <div class="top-description">
             <p class="text-neucha fs-24 text-grey">Когнитивные искажения</p>
@@ -133,10 +131,10 @@
         </div>
       </div>
     </section>
-    <!-- ПРЕЖДЕВРЕМЕННАЯ ОПТИМИЗАЦИЯ-->
+    <!-- PREMATURE OPTIMIZATION -->
     <section id="premature-optimization" class="background bg-brown text-white">
       <div class="op-90 w-1110 pt-100 pb-100 m-auto">
-        <div class="top d-flex">
+        <div class="top d-flex g-30">
           <div class="top-description">
             <p class="text-neucha fs-24 text-semi-light">Когнитивные искажения</p>
             <div class="top-description-info">
@@ -161,10 +159,10 @@
         </div>
       </div>
     </section>
-    <!-- ИСКАЖЕНИЕ НОВИЗНЫ-->
+    <!-- DISTORTION OF NOVELTY -->
     <section id="distortion-of-novelty" class="background bg-light">
       <div class="m-auto op-90 w-1110 pt-100 pb-100">
-        <div class="top d-flex">
+        <div class="top d-flex g-30">
           <img class="filter" src="./assets/images/distortion-of-novelty.png" alt="Distortion of novelty">
           <div class="top-description">
             <p class="text-neucha fs-24 text-grey">Когнитивные искажения</p>
@@ -191,10 +189,10 @@
         </div>
       </div>
     </section>
-    <!-- ГИПЕРБОЛИЧЕСКОЕ ОБЕСЦЕНИВАНИЕ-->
+    <!-- HYPERBOLIC DEPRECIATION -->
     <section id="hyperbolic-depreciation" class="background op-90 bg-brown text-white">
       <div class="m-auto w-1110 pt-100 pb-100">
-        <div class="top d-flex">
+        <div class="top d-flex g-30">
           <div class="top-description">
             <p class="text-neucha fs-24 text-semi-light">Когнитивные искажения</p>
             <div class="top-description-info">
@@ -223,10 +221,10 @@
         </div>
       </div>
     </section>
-    <!-- ОШИБКА ПЛАНИРОВАНИЯ -->
+    <!-- ERRORS IN PLANNING -->
     <section id="errors-in-planning" class="background bg-light op-90">
       <div class="m-auto w-1110 pt-100 pb-100">
-        <div class="top d-flex">
+        <div class="top d-flex g-30">
           <img class="filter" src="./assets/images/planning-error.png" alt="Errors in planning">
           <div class="top-description">
             <p class="text-neucha fs-24 text-grey">Когнитивные искажения</p>
@@ -265,7 +263,7 @@
         </h3>
         <div class="footer-form w-50">
           <p class="fs-18 mb-10">Электронная почта</p>
-          <form class=" d-flex" action="#">
+          <form class="d-flex align-items-center" action="#">
             <div class="footer-input">
               <label for="email">
                 <input class="h-50 w-425 p-15" type="email" name="email" id="email" placeholder="Ваша электронная почта">
