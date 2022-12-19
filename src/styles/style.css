@@ -38,18 +38,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   font: 16px/1.6 OpenSans;
   color: var(--dark-color);
 }
 
+/* STRUCTURE */
 .header {
   position: relative;
 }
 
+.heading {
+  font-family: var(--headers-font), sans-serif;
+  line-height: 1.2;
+}
+
 .overview {
   position: relative;
-
   flex-direction: column;
   align-items: center;
 }
@@ -63,7 +67,6 @@ body {
   position: absolute;
   top: 50px;
   right: -290px;
-
   height: 525px;
 }
 
@@ -76,11 +79,9 @@ body {
   display: inline-block;
   padding: 12px 24px;
   margin-top: 40px;
-
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-
   background: var(--main-orange-color);
 }
 
@@ -89,12 +90,56 @@ body {
   transition: 0.3s;
 }
 
+/* DISPLAY */
+
 .d-flex {
   display: flex;
 }
 
+.fd-column {
+  flex-direction: column;
+}
+
+.g-16 {
+  gap: 16px;
+}
+
+.g-30 {
+  gap: 30px;
+}
+
 .d-block {
   display: block;
+}
+
+/* MARGIN + PADDING */
+
+.p-15 {
+  padding: 15px;
+}
+
+.p-24 {
+  padding: 24px;
+}
+
+.p-55 {
+  padding: 55px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.pt-200 {
+  padding-top: 200px;
+}
+
+.mt-60 {
+  margin-top: 60px;
 }
 
 .mt-100 {
@@ -103,6 +148,10 @@ body {
 
 .mt-185 {
   margin-top: 185px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
 }
 
 .mb-16 {
@@ -121,12 +170,38 @@ body {
   margin-bottom: 40px;
 }
 
-.g-30 {
-  gap: 30px;
+/* COLORS */
+
+.bg-white {
+  background-color: var(--white-color);
+}
+
+.bg-orange {
+  background-color: var(--main-orange-color);
+}
+
+.bg-dark {
+  background-color: var(--main-dark-color);
+}
+
+.bg-semi-light {
+  background-color: var(--light-color);
+}
+
+.bg-light {
+  background-color: var(--light-color);
+}
+
+.bg-brown {
+  background-color: var(--brown-color);
 }
 
 .text-orange {
   color: var(--main-orange-color);
+}
+
+.text-semi-light {
+  color: var(--semi-white-color);
 }
 
 .text-white {
@@ -137,11 +212,6 @@ body {
   color: var(--semi-dark-color);
 }
 
-.text-neucha {
-  font-family: Neucha, sans-serif;
-  line-height: 1.2;
-}
-
 .text-dark {
   color: var(--dark-color);
 }
@@ -150,45 +220,38 @@ body {
   color: var(--brown-color);
 }
 
-.ta-center {
-  text-align: center;
+.filter {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
-.w-350 {
-  width: 350px;
+.op-90 {
+  opacity: 0.9;
 }
 
-.w-1110 {
-  width: 1110px;
-  outline: 1px solid black;
+/* FONTS */
+
+.fs-12 {
+  font-size: 12px;
 }
 
-.h-700 {
-  height: 700px;
+.fs-14 {
+  font-size: 14px;
 }
 
-.pt-100 {
-  padding-top: 100px;
-}
-.pt-200 {
-  padding-top: 200px;
+.fs-18 {
+  font-size: 18px;
 }
 
-.pb-100 {
-  padding-bottom: 100px;
+.fs-24 {
+  font-size: 24px;
 }
 
-.p-24 {
-  padding: 24px;
+.fs-34 {
+  font-size: 34px;
 }
 
-.heading {
-  font-family: var(--headers-font), sans-serif;
-  line-height: 1.2;
-}
-
-.fs-72 {
-  font-size: 72px;
+.fs-52 {
+  font-size: 52px;
 }
 
 .fs-60 {
@@ -199,36 +262,48 @@ body {
   font-size: 64px;
 }
 
-.fs-34 {
-  font-size: 34px;
+.fs-72 {
+  font-size: 72px;
 }
 
-.fs-24 {
-  font-size: 24px;
+.text-neucha {
+  font-family: Neucha, sans-serif;
+  line-height: 1.2;
 }
 
-.fs-52 {
-  font-size: 52px;
+.ta-center {
+  text-align: center;
 }
 
-.filter {
-  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+/* WIDTH + HEIGHT */
+
+.w-50 {
+  width: 50%;
 }
 
-.bg-white {
-  background-color: var(--white-color);
+.w-70 {
+  width: 70px;
 }
 
-.bg-dark {
-  background-color: var(--main-dark-color);
+.w-350 {
+  width: 350px;
 }
 
-.bg-light {
-  background-color: var(--light-color);
+.w-425 {
+  width: 425px;
 }
 
-.bg-brown {
-  background-color: var(--brown-color);
+.w-1110 {
+  width: 1110px;
+  /* outline: 1px solid black; */
+}
+
+.h-50 {
+  height: 50px;
+}
+
+.h-700 {
+  height: 700px;
 }
 
 .video {
@@ -265,7 +340,47 @@ body {
   gap: 30px;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
+.footer-top form {
+  align-items: center;
+}
+
+.footer-btn {
+  position: relative;
+}
+
+.footer-btn::before {
+  position: absolute;
+  height: 50px;
+  width: 70px;
+  top: 0;
+  right: 0;
+  background-image: url("../assets/images/send.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.footer-btn:hover {
+  background-color: var(--dark-orange-color);
+}
+
 h4 {
   padding: 5px 10px;
   text-transform: uppercase;
 }
+
+.footer-form a:visited {
+  color: var(--white-color);
+}
+
+.footer-bottom a:visited {
+  color: var(--blue);
+}
+
+/* .background {
+  position: relative;
+}*/
