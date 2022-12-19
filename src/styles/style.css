@@ -35,15 +35,12 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font: 16px/1.6 OpenSans;
   color: var(--dark-color);
 }
 
 /* STRUCTURE */
-.header {
+.container-header {
   position: relative;
 }
 
@@ -54,13 +51,10 @@ body {
 
 .overview {
   position: relative;
-  flex-direction: column;
-  align-items: center;
 }
 
 .navigation {
   flex-wrap: wrap;
-  gap: 30px;
 }
 
 .main-image {
@@ -78,11 +72,9 @@ body {
 .btn {
   display: inline-block;
   padding: 12px 24px;
-  margin-top: 40px;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  background: var(--main-orange-color);
 }
 
 .btn:hover {
@@ -90,10 +82,30 @@ body {
   transition: 0.3s;
 }
 
+.background {
+  position: relative;
+}
+
+.background::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+}
+
 /* DISPLAY */
 
 .d-flex {
   display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .fd-column {
@@ -136,6 +148,14 @@ body {
 
 .pt-200 {
   padding-top: 200px;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.mt-40 {
+  margin-top: 40px;
 }
 
 .mt-60 {
@@ -380,7 +400,3 @@ h4 {
 .footer-bottom a:visited {
   color: var(--blue);
 }
-
-/* .background {
-  position: relative;
-}*/
